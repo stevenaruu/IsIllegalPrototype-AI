@@ -14,10 +14,14 @@ const IllegalPage = () => {
   const [iklans, setIklans] = useState(iklan)
 
   Swal.fire({
-    title: 'Caution',
-    text: 'I advise caution when interacting with suspicious websites. Please navigate away from the site.',
-    icon: 'warning',
-    confirmButtonText: 'Understand'
+    title: 'Warning',
+    text: "I'm sorry, the site your trying to visit contains illegal activities.",
+    icon: 'error',
+    confirmButtonText: 'Understand',
+  }).then((result: any) => {
+    if (result.isConfirmed) {
+      history.goBack();
+    }
   })
 
   return (
