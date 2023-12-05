@@ -10,8 +10,10 @@ const Ads = (props: IAds) => {
     }
   }
   return (
-    <div className={`my-5 container mx-auto h-24 cursor-pointer ${variant}`} onClick={handleClick}>
-      <img className='w-full h-full p-3' src={img} alt="" />
+    <div className="container mx-auto">
+      <div className={`my-5 h-24 cursor-pointer ${variant}`} onClick={handleClick}>
+        <img className='w-full h-full p-3' src={img} alt="" />
+      </div>
     </div>
   )
 }

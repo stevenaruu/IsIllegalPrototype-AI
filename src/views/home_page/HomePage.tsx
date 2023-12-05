@@ -5,7 +5,7 @@ import Ads from '../../components/ads/Ads';
 import Header from '../../components/header/Header';
 import { IAnime } from '../../interfaces/anime.interfaces';
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 8;
 
 const HomePage = () => {
 	const [iklans, setIklans] = useState(iklan);
