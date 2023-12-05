@@ -25,14 +25,14 @@ const HomePage = () => {
 	useEffect(() => {
 		const Swal = require('sweetalert2');
 
-	  if (iklans[random].isIllegal || iklans[random2].isIllegal || iklans[random3].isIllegal) {
-	    Swal.fire({
-	      title: 'Caution',
-	      text: 'I advise caution when interacting with suspicious websites. Please navigate away from the site.',
-	      icon: 'warning',
-	      confirmButtonText: 'Understand'
-	    });
-	  }
+		if (iklans[random].isIllegal || iklans[random2].isIllegal || iklans[random3].isIllegal) {
+			Swal.fire({
+				title: 'Caution',
+				text: 'I advise caution when interacting with suspicious websites. Please navigate away from the site.',
+				icon: 'warning',
+				confirmButtonText: 'Understand'
+			});
+		}
 	}, [iklans, random, random2, random3]);
 
 	const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -48,7 +48,16 @@ const HomePage = () => {
 			<div className='my-5 container mx-auto'>
 				<div className='flex flex-wrap justify-center gap-5 items-center'>
 					{currentAnimes.map((anime: IAnime, index: number) => (
-						<Card key={index} id={anime.id} title={anime.title} img={anime.img} episode={anime.episode} />
+						<Card
+							key={index}
+							id={anime.id}
+							title={anime.title}
+							img={anime.img}
+							episode={anime.episode}
+							rating={anime.rating}
+							genre={anime.genre}
+							description={anime.description}
+						/>
 					))}
 				</div>
 			</div>

@@ -3,4 +3,7 @@ export interface IAnime {
     title: string,
     img: string,
     episode: number
+    rating: string
+    genre: string
+    description: string
 }
