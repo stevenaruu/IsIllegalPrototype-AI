@@ -149,74 +149,74 @@ const anime = () => ([
     id: 9,
     title: 'Chainsaw Man',
     img: chainsawMan,
-    episode: 24,
-    rating: "",
-    genre: "",
-    description: ""
+    episode: 12,
+    rating: "8.54",
+    genre: "Action, Fantasy",
+    description: "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness."
   },
   {
     id: 10,
     title: 'CodeGeass',
     img: codeGeass,
-    episode: 24,
-    rating: "",
-    genre: "",
-    description: ""
+    episode: 25,
+    rating: "8.70",
+    genre: "Action, Drama, Sci-fi",
+    description: "In the year 2010, the Holy Empire of Britannia is establishing itself as a dominant military nation, starting with the conquest of Japan. Renamed to Area 11 after its swift defeat, Japan has seen significant resistance against these tyrants in an attempt to regain independence."
   },
   {
     id: 11,
     title: 'Death Note',
     img: deathNote,
-    episode: 24,
-    rating: "",
+    episode: 37,
+    rating: "8.62",
     genre: "",
-    description: ""
+    description: "Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling den. The ingenious 17-year-old Japanese student Light Yagami and sadistic god of death Ryuk share one belief: their worlds are rotten."
   },
   {
     id: 12,
     title: 'Neon Genesis Evangelion',
     img: evangelion,
     episode: 24,
-    rating: "",
-    genre: "",
-    description: ""
+    rating: "8.35",
+    genre: "Action, Drama, Sci-fi",
+    description: "Fifteen years after a cataclysmic event known as the Second Impact, the world faces a new threat: monstrous celestial beings called Angels invade Tokyo-3 one by one. Mankind is unable to defend themselves against the Angels despite utilizing their most advanced munitions and military tactics. The only hope for human salvation rests in the hands of NERV, a mysterious organization led by the cold Gendou Ikari. NERV operates giant humanoid robots dubbed 'Evangelions' to combat the Angels with state-of-the-art advanced weaponry and protective barriers known as Absolute Terror Fields."
   },
   {
     id: 13,
     title: 'Full Metal Alchemist: Brohtherhood',
     img: fullMetal,
-    episode: 24,
-    rating: "",
-    genre: "",
-    description: ""
+    episode: 64,
+    rating: "9.09",
+    genre: "Action, Adventure, Drama",
+    description: "After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation, the boys attempted to bring their recently deceased mother back to life. Instead, they suffered brutal personal loss: Alphonse's body disintegrated while Edward lost a leg and then sacrificed an arm to keep Alphonse's soul in the physical realm by binding it to a hulking suit of armor."
   },
   {
     id: 14,
     title: 'Oshi no Ko',
     img: oshiNoKo,
-    episode: 24,
-    rating: "",
+    episode: 11,
+    rating: "8.73",
     genre: "",
-    description: ""
+    description: "In the entertainment world, celebrities often show exaggerated versions of themselves to the public, concealing their true thoughts and struggles beneath elaborate lies. Fans buy into these fabrications, showering their idols with undying love and support, until something breaks the illusion. Sixteen-year-old rising star Ai Hoshino of pop idol group B Komachi has the world captivated; however, when she announces a hiatus due to health concerns, the news causes many to become worried."
   },
   {
     id: 15,
     title: 'Monster',
     img: monster,
-    episode: 24,
-    rating: "",
-    genre: "",
-    description: ""
+    episode: 74,
+    rating: "8.88",
+    genre: "Drama, Mystery, Suspense",
+    description: "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. That is until one night, a seemingly small event changes Dr. Tenma's life forever. While preparing to perform surgery on someone, he gets a call from the hospital director telling him to switch patients and instead perform life-saving brain surgery on a famous performer. His fellow doctors, fiancée, and the hospital director applaud his accomplishment; but because of the switch, a poor immigrant worker is dead, causing Dr. Tenma to have a crisis of conscience."
   },
   {
     id: 16,
     title: 'Violet Evergarden',
     img: violetEvergarden,
     episode: 24,
-    rating: "",
-    genre: "",
-    description: ""
-  },
+    rating: "8.88",
+    genre: "Drama, Fantasy",
+    description:"Several years have passed since the end of The Great War. As the radio tower in Leidenschaftlich continues to be built, telephones will soon become more relevant, leading to a decline in demand for 'Auto Memory Dolls.' Even so, Violet Evergarden continues to rise in fame after her constant success with writing letters. However, sometimes the one thing you long for is the one thing that does not appear."
+  }
 ])
 
 const winner = () => ([
