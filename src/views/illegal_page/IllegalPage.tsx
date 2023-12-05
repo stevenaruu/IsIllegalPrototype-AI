@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { winner, iklan } from '../../utils/data';
 import Navbar from "../../components/navbar/Navbar";
 import Winner from "../../components/winner/Winner";
@@ -12,17 +12,30 @@ const IllegalPage = () => {
   const history = useHistory();
   const [winners, setWinners] = useState(winner)
   const [iklans, setIklans] = useState(iklan)
+  const [textColor, setTextColor] = useState('text-yellow-500');
 
-  Swal.fire({
-    title: 'Warning',
-    text: "I'm sorry, the site your trying to visit contains illegal activities.",
-    icon: 'error',
-    confirmButtonText: 'Understand',
-  }).then((result: any) => {
-    if (result.isConfirmed) {
-      history.goBack();
-    }
-  })
+  useEffect(() => {
+    const changeColor = () => {
+      setTextColor((prevColor) =>
+        prevColor === 'text-yellow-500' ? 'text-white' : 'text-yellow-500'
+      );
+    };
+    const intervalId = setInterval(changeColor, 70);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    Swal.fire({
+      title: 'Warning',
+      text: "I'm sorry, the site your trying to visit contains illegal activities.",
+      icon: 'error',
+      confirmButtonText: 'Understand',
+    }).then((result: any) => {
+      if (result.isConfirmed) {
+        history.goBack();
+      }
+    })
+  }, [])
 
   return (
     <div className="relative">
@@ -64,8 +77,17 @@ const IllegalPage = () => {
             <button className="font-bold mt-5 px-10 py-2 bg-violet-500 rounded-md">Register</button>
           </div>
         </div>
-        <div className="w-3/6 flex justify-center">
-          <div className="mt-5 bg-slate-100 w-96">
+        <div className="w-3/6 flex justify-center relative">
+          <div className="absolute text-white">
+            {Array(13).fill(undefined).map((_, index) => (
+              <div className={`flex font-bold text-7xl gap-10 ${textColor}`} key={index}>
+                <p>GACOR!</p>
+                <p>GACOR!</p>
+                <p>GACOR!</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-5 bg-slate-100 w-96 z-10 ">
             <div className="border-b-4 border-violet-800 p-4">
               <p className="font-bold text-xl text-violet-800">Pemenang Teratas</p>
             </div>
