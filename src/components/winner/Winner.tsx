@@ -8,7 +8,7 @@ const Winner = (props: IWinner) => {
         <p className="font-bold">{telephone}</p>
         <p>{country}</p>
       </div>
-      <p className="text-black">
+      <p className="text-red-500 font-semibold">
         {money}
       </p>
     </div>

@@ -6,9 +6,9 @@ const Input = (props: IInput) => {
     <div className="flex flex-col mb-5">
       <label
         htmlFor="input"
-        className="text-gray-600 font-medium text-sm"
+        className="text-white font-medium text-sm"
       >
-        {label} <span className="text-red-600">*</span>
+        {label} <span className="text-red-500">*</span>
       </label>
       <input
         type={type}

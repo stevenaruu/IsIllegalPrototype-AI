@@ -52,7 +52,7 @@ const IllegalPage = () => {
         <li className="cursor-pointer">QQPOOL</li>
       </Navbar>
       <div className="flex">
-        <div className="bg-gray-200 w-3/6 p-40">
+        <div className="bg-gray-200 w-3/6 p-40 bg-judi-background bg-cover bg-center">
           <Input
             type="text"
             placeholder="Nama Pengguna"
